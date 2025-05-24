@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: google.com
+    name: google-ip-logger
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn ip:app
